@@ -11,13 +11,15 @@ repositories {
 
 dependencies {
     testImplementation (
-            'org.junit.jupiter:junit-jupiter-api:5.8.1',
-            'com.codeborne:selenide:6.5.1'
+            'org.junit.jupiter:junit-jupiter:5.8.2',
+            'com.codeborne:selenide:6.5.0',
+            "org.slf4j:slf4j-simple:1.7.36"
     )
 }
 
 tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'}
+    options.encoding = 'UTF-8'
+}
 
 test {
     useJUnitPlatform()
